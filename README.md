@@ -23,7 +23,8 @@ Important notice
   an try,  as the detection  results won't change, but  bare in mind  that there
   might be compiler related issues.
   
-* **This repository requires OpenCV 2.4.X**
+* <s> **This repository requires OpenCV 2.4.X** </s>
+* **Now, This repository requires => OpenCV 3.1 
 
 * Python version provided by @alehdaghi. Thank you! 
 
