@@ -20,6 +20,7 @@
 // YOUR OWN RISK!
 
 #include "KLTWrapper.hpp"
+#include "opencv2/calib3d/calib3d.hpp"
 
 #include <vector>
 #include <highgui.h>
@@ -149,7 +150,7 @@ void KLTWrapper::RunTrack(IplImage * imgGray, IplImage * prevGray)
 
 void KLTWrapper::SwapData(IplImage * imgGray)
 {
-	cvCopyImage(imgGray, imgPrevGray);
+	cvCopy(imgGray, imgPrevGray);
 	CV_SWAP(prev_pyramid, pyramid, swap_temp);
 	CV_SWAP(points[0], points[1], swap_points);
 }
